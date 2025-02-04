@@ -131,6 +131,44 @@
         text-decoration: underline;
     }
 
+           /* BUTTON STYLES */
+    .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: #A65B3D; /* Deep warm brown */
+        color: white;
+        transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+        background-color: #D8926B; /* Soft terracotta */
+        transform: scale(1.05);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .project {
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .btn, .project img, .project video {
+        transition: transform 0.3s ease-in-out, opacity 0.3s;
+    }
+
+    .project:hover img, .project:hover video {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+
+
 
 
 </style>
@@ -213,10 +251,10 @@
 
 
 
-    <div class="section" id="contact">
+   <div class="section" id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:ali.shaygani@gmail.com">ali.shaygani@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-shaygani-b16b74250/" target="_blank">My LinkedIn</a></p>
+    <a href="mailto:ali.shaygani@gmail.com" class="btn">📧 Email Me</a>
+    <a href="https://www.linkedin.com/in/ali-shaygani-b16b74250/" target="_blank" class="btn">🔗 LinkedIn</a>
 </div>
 </body>
 </html>
