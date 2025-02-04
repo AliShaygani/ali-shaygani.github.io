@@ -88,6 +88,37 @@
         line-height: 1.5;
         margin-top: 10px;
     }
+
+           /* NAVIGATION MENU - STICKY HEADER */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+        z-index: 1000;
+    }
+
+    nav a {
+        margin: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #007bff;
+        transition: color 0.3s;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: #0056b3;
+    }
+
+    /* Adds spacing so content doesn’t hide under sticky nav */
+    body {
+        padding-top: 70px;
+    }
+
 </style>
 
 
@@ -95,11 +126,11 @@
 </head>
 <body>
     <h1>Welcome to My Portfolio</h1>
-    <nav>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-    </nav>
+   <nav>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 
    <div class="section" id="projects">
     <h2>Projects</h2>
@@ -169,9 +200,9 @@
 
 
     <div class="section" id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: ali.shaygani@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-shaygani-b16b74250/" target="_blank">My LinkedIn</a></p>
-    </div>
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ali.shaygani@gmail.com">ali.shaygani@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-shaygani-b16b74250/" target="_blank">My LinkedIn</a></p>
+</div>
 </body>
 </html>
