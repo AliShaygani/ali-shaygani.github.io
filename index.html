@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Shaygani - Portfolio</title>
-    <style>
+   <style>
     body { 
         font-family: Arial, sans-serif; 
         text-align: center; 
@@ -30,14 +30,40 @@
         margin-top: 50px; 
     }
 
-    /* Make project titles (h3) larger */
+    /* Make project titles larger */
     h3 {
-        font-size: 28px; /* Adjust size as needed */
+        font-size: 28px; 
         font-weight: bold;
         color: #0056b3;
         text-align: center;
     }
+
+    /* PROJECTS SECTION - GRID LAYOUT */
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Flexible grid */
+        gap: 40px; /* Space between items */
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto; /* Centering */
+    }
+
+    .project {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .project img, .project video {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 5px;
+    }
+
 </style>
+
 
 </head>
 <body>
@@ -50,61 +76,65 @@
 
    <div class="section" id="projects">
     <h2>Projects</h2>
+    
+    <div class="projects-container">
+        
+        <!-- Butterfly Valve -->
+        <div class="project">
+            <h3>Butterfly Valve</h3>
+            <img src="butterfly_final.PNG" alt="Butterfly Valve Final Design">
+            <p>Designed a high-performance butterfly valve optimized for fluid control applications.</p>
+            <video controls>
+                <source src="butterfly_exploded.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
-    <!-- Butterfly Valve -->
-    <div>
-        <h3>Butterfly Valve</h3>
-        <img src="butterfly_final.PNG" alt="Butterfly Valve Final Design" width="600" height="auto">
-        <p>Designed a high-performance butterfly valve optimized for fluid control applications. Ensured manufacturability and reliability through detailed CAD modeling.</p>
-        <video width="600" controls>
-            <source src="butterfly_exploded.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+        <!-- Pressure Vessel -->
+        <div class="project">
+            <h3>Pressure Vessel</h3>
+            <img src="pressure_final.PNG" alt="Pressure Vessel Final Design">
+            <p>Developed a pressure vessel following ASME standards. Conducted equivalent stress and deformation analysis.</p>
+            <video controls>
+                <source src="pressure_final.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="pressure_stress.png" alt="Pressure Vessel Stress Analysis">
+            <img src="pressure_deformation.png" alt="Pressure Vessel Deformation Analysis">
+        </div>
 
-    <!-- Pressure Vessel -->
-    <div>
-        <h3>Pressure Vessel</h3>
-        <img src="pressure_final.PNG" alt="Pressure Vessel Final Design" width="600" height="auto">
-        <p>Developed a pressure vessel considering ASME standards. Conducted equivalent stress and deformation analysis to validate structural integrity.</p>
-        <video width="600" controls>
-            <source src="pressure_final.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <img src="pressure_stress.png" alt="Pressure Vessel Stress Analysis" width="600" height="auto">
-        <img src="pressure_deformation.png" alt="Pressure Vessel Deformation Analysis" width="600" height="auto">
-    </div>
+        <!-- Metal Sheet Cutter -->
+        <div class="project">
+            <h3>Metal Sheet Cutter</h3>
+            <img src="cutter_final.png" alt="Metal Sheet Cutter Final Design">
+            <p>Designed a precision metal sheet cutter with an ergonomic interface.</p>
+            <video controls>
+                <source src="cutter_exploded.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
-    <!-- Metal Sheet Cutter -->
-    <div>
-        <h3>Metal Sheet Cutter</h3>
-        <img src="cutter_final.png" alt="Metal Sheet Cutter Final Design" width="600" height="auto">
-        <p>Designed a precision metal sheet cutter with an ergonomic interface. Utilized stress analysis to optimize blade durability.</p>
-        <video width="600" controls>
-            <source src="cutter_exploded.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+        <!-- Water Pump -->
+        <div class="project">
+            <h3>Water Pump</h3>
+            <img src="pump_final.PNG" alt="Water Pump Final Design">
+            <p>Designed an efficient water pump system optimized for durability.</p>
+            <img src="pump_section.PNG" alt="Water Pump Section View">
+            <img src="pump_stress.jpg" alt="Water Pump Stress Analysis">
+            <img src="pump_deformation.jpg" alt="Water Pump Deformation Analysis">
+        </div>
 
-    <!-- Water Pump -->
-    <div>
-        <h3>Water Pump</h3>
-        <img src="pump_final.PNG" alt="Water Pump Final Design" width="600" height="auto">
-        <p>Designed an efficient water pump system optimized for performance and durability. Conducted finite element analysis (FEA) to ensure reliability under operational conditions.</p>
-        <img src="pump_section.PNG" alt="Water Pump Section View" width="600" height="auto">
-        <img src="pump_stress.jpg" alt="Water Pump Stress Analysis" width="600" height="auto">
-        <img src="pump_deformation.jpg" alt="Water Pump Deformation Analysis" width="600" height="auto">
-    </div>
+        <!-- Ball Valve -->
+        <div class="project">
+            <h3>Ball Valve</h3>
+            <img src="ball_final.PNG" alt="Ball Valve Final Design">
+            <p>Developed a ball valve with an optimized sealing mechanism.</p>
+            <video controls>
+                <source src="ball_final.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
-    <!-- Ball Valve -->
-    <div>
-        <h3>Ball Valve</h3>
-        <img src="ball_final.PNG" alt="Ball Valve Final Design" width="600"height="auto">
-        <p>Developed a ball valve with an optimized sealing mechanism for industrial applications. Ensured ease of assembly and long-term durability.</p>
-        <video width="600" controls>
-            <source src="ball_final.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
     </div>
 </div>
 
