@@ -169,6 +169,50 @@
     }
 
 
+    /* HEADINGS - FADE-IN EFFECT */
+    h1, h2, h3 {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeInText 0.8s ease-in-out forwards;
+    }
+
+    @keyframes fadeInText {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* PROJECT SECTIONS - SLIDE UP EFFECT */
+    .project {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideUp 0.8s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* BUTTON HOVER EFFECTS */
+    .btn {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* PROJECT IMAGE & VIDEO HOVER EFFECT */
+    .project img, .project video {
+        transition: transform 0.3s ease-in-out, opacity 0.3s, box-shadow 0.3s ease-in-out;
+    }
+
+    .project:hover img, .project:hover video {
+        transform: scale(1.03);
+        opacity: 0.95;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
 
 
 </style>
