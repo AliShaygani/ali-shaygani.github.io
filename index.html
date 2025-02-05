@@ -272,6 +272,34 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .projects-container {
+        grid-template-columns: 1fr; /* Stack projects vertically */
+    }
+
+    #profile-photo {
+        width: 120px; /* Reduce photo size */
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 28px; /* Smaller font size for the name */
+    }
+
+    header p {
+        font-size: 16px; /* Smaller "Welcome" text */
+    }
+
+    footer {
+        font-size: 12px; /* Reduce footer text size */
+    }
+
+    .btn {
+        font-size: 16px; /* Adjust button font size */
+        padding: 10px 15px; /* Smaller padding for buttons */
+    }
+}
 
 
 </style>
